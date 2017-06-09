@@ -62,28 +62,41 @@ export default class WelcomeToVR extends React.Component {
 				</View>
 
 				{/* Generic text */}
-				<Animated.Text style={{
-						backgroundColor: 'rgba(0, 0, 0, 0.75)',
-						color: '#FFFFFF',
-						fontSize: 0.5,
-						fontWeight: '400',
-						layoutOrigin: [0.5, 0.5],
-						paddingLeft: 0.2,
-						paddingRight: 0.2,
-						textAlign: 'center',
-						textAlignVertical: 'center',
-						// position: 'absolute',
-						// top: 0,
-						// left: 0,
+				<View
+					billboarding={'on'}
+					style={{
 						transform: [
-							{translate: [4, 11, -6]},
-							{rotateY : -40},
-							{scale: this.state.bounceValue}
+							{translate: [6, 10, -6]},
+							// {rotateY : -40},
 						],
-						opacity: this.state.overlayShowing
-					}}>
-						Some text about the thing
-				</Animated.Text>
+					}}
+				>
+
+					<Animated.Text
+						style={{
+							backgroundColor: 'rgba(0, 0, 0, 0.75)',
+							color: '#FFFFFF',
+							fontSize: 0.5,
+							fontWeight: '400',
+							layoutOrigin: [0.5, 0.5],
+							paddingLeft: 0.2,
+							paddingRight: 0.2,
+							textAlign: 'center',
+							textAlignVertical: 'center',
+							// position: 'absolute',
+							// top: 0,
+							// left: 0,
+							opacity: this.state.overlayShowing,
+							transform: [
+								{scale: this.state.bounceValue}
+							]
+						}}
+
+						>
+							Some text about the thing
+						</Animated.Text>
+
+				</View>
 
 				{/* <Text
 					style={{
