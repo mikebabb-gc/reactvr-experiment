@@ -26,7 +26,7 @@ export default class WelcomeToVR extends React.Component {
 			tension: 80, // speed, default 40
 		}).start();
 
-		console.log(this.state.bounceValue);
+		// More at https://facebook.github.io/react-vr/docs/animations.html
 
 		this.setState({
 			overlayShowing: bool ? 1 : 0,
